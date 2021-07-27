@@ -1,0 +1,81 @@
+html {
+    font-family: arial, sans-serif;
+    color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 300px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+section input {
+    min-width: 300px;
+    padding: 5px 10px ;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+section h1 {
+    margin-left: 2px;
+    margin-bottom: 5px;
+    font-size: 30px;
+
+}
+
+button {
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #333;
+    color: #fff;
+    border: #333 solid 2px;
+    transition: .3s;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #333;
+    border: #333 solid 2px;
+}
+
+button:disabled {
+    background-color: #333;
+    color: #fff;
+    border: #333 solid 2px;
+    opacity: 0.5;
+    cursor:auto;
+}
+
+p { 
+    margin: 0 2px 15px;
+    font-size: 12px;
+    color: #333;
+}
+
+p.validation {
+    color: red;
+}
+
+button.hide, p.hide {
+    display: none;
+}
+
+button.back {
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
